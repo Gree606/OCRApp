@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">OCRApp</string>
+    <string-array name="inlangs">
+        <item>English</item>
+        <item>Hindi</item>
+        <item>Malayalam</item>
+        <item>Marathi</item>
+        <item>Telugu</item>
+        <item>Tamil</item>s
+        <item>Kannada</item>
+        <item>Gujarati</item>
+        <item>Bengali</item>
+    </string-array>
+
+    <string-array name="outlangs">
+        <item>English</item>
+        <item>Hindi</item>
+        <item>Malayalam</item>
+        <item>Tamil</item>
+        <item>Kannada</item>
+        <item>Gujarati</item>
+        <item>Telugu</item>
+        <item>Bengali</item>
+        <item>Marathi</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <androidx.camera.view.PreviewView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/previewView"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+    <Button
+        android:id="@+id/Capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capture"
+        android:backgroundTint="@color/black"
+        android:layout_margin="20dp"
+        />
+
+        <ImageButton
+            android:id="@+id/PlayButton"
+            android:src="@drawable/playbutton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:scaleType="centerCrop"
+            android:background="@android:color/transparent"/>
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/ReplayButton"-->
+<!--            android:src="@drawable/replaybutton"-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_margin="20dp"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:background="@android:color/transparent"/>-->
+
+
+
+    </LinearLayout>
+    <Spinner
+        android:id="@+id/spinner_input_languages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="10sp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/purple_200"
+        android:textColor="@color/white"
+        android:autofillHints="language"
+        android:layout_margin="10sp"
+        android:padding="2dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_output_languages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/purple_200"
+        android:textColor="@color/white"
+        android:autofillHints="language"
+        android:layout_margin="10sp"
+        android:padding="2dp"/>
+
+
+
+</LinearLayout>
